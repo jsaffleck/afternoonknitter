@@ -3,10 +3,20 @@ layout: default
 title: Jodi's Blog
 ---
 {% for post in site.posts %}
-<div class="row mb-5">
-  <div class="col-12 bp-date">{{ post.date | date_to_string }}</div>
-  <div class="col-12"><a href="{{ post.url }}"><h5>{{ post.title }}</h5></a></div>
-  <div class="col-12 pt-2 bp-post">{{ post.excerpt }}</div>
-  <div class="col-12 small"><a href="{{ post.url }}">Keep reading...</a></div>
+<div class="row post-home">
+  <div class="col-5">
+    <img src="/assets/img/title-images/{{post.image}}" class="img-fluid ph-image">
+  </div>
+  <div class="col-7">
+    <div class="row">
+      <div class="col-12 ph-tag">{{ post.tags | first }}</div>
+      <div class="col-12 ph-title"><a href="{{ post.url }}"><h5>{{ post.title }}</h5></a></div>
+      <div class="col-12 ph-content">{{ post.content | split:'<!--preview-->' | first }}</div>
+      <div class="col-12 ph-readmore"><a href="{{ post.url }}" class="ph-rm-link">read more</a></div>
+    </div>
+  </div>
 </div>
+{% if forloop.last == false %}
+<div class="row"><div class="col-12 mt-4"><hr/></div></div>
+{% endif %}
 {% endfor %}

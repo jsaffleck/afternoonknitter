@@ -12,9 +12,10 @@ def new_post
   out_file.puts("---")
   out_file.puts("layout: post")
   out_file.puts("date: " + post_d)
-  out_file.puts("author: ")
+  out_file.puts("tags: one")
+  out_file.puts("image: need-image.jpg")
   out_file.puts("---")
-  out_file.puts("Lorem ipsum dolar")
+  out_file.puts("Lorem ipsum dolar <!--preview--> the rest won't show in the home page preview")
   out_file.close
 
 end

@@ -13,6 +13,21 @@
 #### Open console
 `Ctrl + Shift + ~`
 
+### Working on stuff
+
+#### Run local site
+`./_scripts/run.rb`
+
+#### Publish all local changes
+`./_scripts/publish.rb`
+
+#### Create a new blog post
+`./_scripts/post.rb "This is the title of my new post"`
+
+#### Create a new DRAFT post
+`./_scripts/draft.rb "This is the title of a draft"`
+
+
 ## Windows setup
 
 ### Ruby + dev kit
@@ -42,17 +57,4 @@ Depending on whether you installed git or github, you'll need to figure out wher
 
 `C:\Users\[User]\AppData\Local\GitHub\PortableGit_[bunch of digits]\cmd`
 
-## Shortcuts
-
-### Run local site
-`./_scripts/run.rb`
-
-### Publish all local changes
-`./_scripts/publish.rb`
-
-### Create a new blog post
-`./_scripts/post.rb "This is the title of my new post"`
-
-### Create a new DRAFT post
-`./_scripts/draft.rb "This is the title of a draft"`
 

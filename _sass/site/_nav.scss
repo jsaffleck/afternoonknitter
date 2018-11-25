@@ -1,23 +1,33 @@
+.top-nav {
+  border-bottom: 3px solid $primary;
+  display: flex;
 
-.top-highlight {
-  height: 6px;
-  max-height: 6px;
-  background: $highlight;
-}
-
-.site-pic {
-  border-radius: 50%;
-}
-
-.nav {
-  .nav-link {
-    border-top: 1px solid $primary-light;
-    border-left: 1px solid $primary-light;
-    border-right: 1px solid $primary-light;
-    background: #eeeeee;
+  .tn-title {
+    display: inline-block;
+    background: $primary;
+    color: $white;
+    font-family: $font-family-serif;
+    align-self: center;
+    font-size: 36px;
+    letter-spacing: 2px;
+    min-width: 320px;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 
-  .nav-link:last-child {
-    border-bottom: 1px solid $primary-light;
+  .tn-nav {
+    display: inline-block;
+    font-size: 22px;
+    align-self: center;
+    line-height: 40px;
+    letter-spacing: 2px;
+    padding-left: 32px;
+    font-family: $font-family-serif;
+  }
+
+  .nl {
+    padding-right: 20px;
   }
 }
+
